@@ -5,6 +5,14 @@
  */
 package tp_10.ej_2;
 
+/*
+Crea una clase Contador con los métodos para incrementar y
+decrementar el contador. La clase contendrá un constructor por
+defecto, un constructor con parámetros, un constructor copia y los
+métodos getters y setters
+*/
+
+
 /**
  *
  * @author Fernando
@@ -41,7 +49,6 @@ public class Ej_02 {
         Persona x = new Persona();
         x.setApellido("Fuster");
         //x.apellido="Fuster";
-
         x.setNombre("Fernando");
         x.setDni("32.000.000");
         
