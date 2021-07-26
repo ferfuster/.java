@@ -15,4 +15,11 @@ public class Persona {
     public String dni;
     public ArrayList<Cuenta> cuentas;
     
+    public void agregarCuenta (Cuenta c){
+        
+        if(cuentas.size()<3){
+        this.cuentas.add(c);
+        }
+    }
+    
 }
