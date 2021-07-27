@@ -18,10 +18,17 @@ public class Ej_Funcion {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int acumulador =0;
+        for (int i=0; i<10; i++){
+            acumulador= acumulador + i;
+        }
+        System.out.println(acumulador);
         
         int resultado = suma(9,10);
         
         System.out.println(resultado);
+        
+        
         saludoPersonalizado("fernando");
         Scanner leer = new Scanner(System.in);
         String nombre = leer.next();
