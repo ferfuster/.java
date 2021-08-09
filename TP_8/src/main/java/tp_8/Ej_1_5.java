@@ -26,12 +26,42 @@ public class Ej_1_5 {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
         double peso, dolar, euro, real;
+        String moneda = null;
+        String str  = moneda;
         
         System.out.println("Ingrese el valor en pesos a convertir:");
         peso= sc.nextDouble();
         
-        dolar= peso/57;
-        euro=peso/61.8;
-        real=peso/13.6;
+        System.out.println("Seleccione la moneda: ");
+        System.out.println("Dolar");
+        System.out.println("Euro");
+        System.out.println("Real");
+        
+         str = sc.next();
+        System.out.println(str.toLowerCase());
+        
+        switch (str) {
+            case "dolar":
+                System.out.println("Su moneda equivale a U$D "+ peso/57);
+                
+                break;
+                
+                case"euro":
+                    System.out.println("Su moneda equivale a EUR "+peso/61.8);
+                    break;
+                case "real":
+                    System.out.println("Su moneda equivale a R "+peso/13.6);
+                    break;
+            default:
+                System.out.println("no se encuenta el tipo de moneda mencionado");
+        
+        }
+        //dolar= peso/57;
+        //euro=peso/61.8;
+        //real=peso/13.6;
     }
+
+
+
+   
 }
