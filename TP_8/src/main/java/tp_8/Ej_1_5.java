@@ -38,7 +38,8 @@ public class Ej_1_5 {
         System.out.println("Real");
         
          str = sc.next();
-        System.out.println(str.toLowerCase());
+         str = str.toLowerCase();
+        //System.out.println(str.toLowerCase());
         
         switch (str) {
             case "dolar":
@@ -53,15 +54,7 @@ public class Ej_1_5 {
                     System.out.println("Su moneda equivale a R "+peso/13.6);
                     break;
             default:
-                System.out.println("no se encuenta el tipo de moneda mencionado");
-        
-        }
-        //dolar= peso/57;
-        //euro=peso/61.8;
-        //real=peso/13.6;
+                System.out.println("no se encuenta el tipo de moneda mencionado");       
+        } 
     }
-
-
-
-   
 }
